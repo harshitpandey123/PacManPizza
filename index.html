@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous" />
+   <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="./utilites.css">
+   <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
+   <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.0/mapbox-gl.js'></script> -->
+   <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.0/mapbox-gl.css' rel='stylesheet' /> -->
+
+   <title>PacManPizza</title>
+</head>
+
+<body>
+   <div class="main">
+      <div class="nav">
+         <img src="./img/logo.png" alt="">
+         <div class="nav-links">
+            <ul>
+               <li><a href="" class="login">Login</a></li>
+               <li><a href="" class="signin">Sign up</a></li>
+               <li><a href="/about.html">About</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="showcase">
+         <div class="showcase-content">
+            <h1>PACMAN PIZZA</h1>
+            <div>Order fresh and fast. PacMan is Pizza! </div>
+            <div class="search-box">
+               <input type="text" placeholder="Enter your delivery location" required>
+               <button class="location"> <i class="fas fa-search-location"></i>LOCATE ME</button>
+               <button type="submit" class="find-food" onclick="document.location='explore.html'">FIND FOOD</button>
+            </div>
+         </div>
+      </div>
+      <div class="overview-form">
+         <i class="fas fa-times close"></i>
+         <div class="login-form">
+            <form action="">
+               <h1>Login</h1>
+               <input type="text" placeholder="Email or Phone no."id="email_login" required>
+               <input type="password" placeholder="Password" id="password_login" required>
+               <button onclick="accountlogin()">LOGIN</button>
+            </form>
+         </div>
+         <div class="signin-form">
+            <h1>Sign up</h1>
+            <form action="">
+               <input type="text" placeholder="Name" required>
+               <input type="email" placeholder="Email" id="email_field" required>
+               <input type="number" placeholder="Phone number">
+               <input type="password" placeholder="Password" id="password_field" required>
+               <button class="bg-primary">Continue</button>
+               <p>By creating an account, I accept the <a href="">Terms & Conditions</a></p>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+
+   <script src="./firebase.js"></script>
+   <script src="./app.js"></script>
+</body>
+
+</html>
